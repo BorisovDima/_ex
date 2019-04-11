@@ -1,0 +1,143 @@
+2019-04-07T23:19:41+0300 [-] Loading server.py...
+2019-04-07T23:19:41+0300 [-] Loaded.
+2019-04-07T23:19:41+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/twisted_note/venv/bin/python 3.6.6) starting up.
+2019-04-07T23:19:41+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-04-07T23:19:41+0300 [stderr#error] Traceback (most recent call last):
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/internet/tcp.py", line 1361, in startListening
+2019-04-07T23:19:41+0300 [stderr#error]     skt.bind(addr)
+2019-04-07T23:19:41+0300 [stderr#error] OSError: [Errno 98] Address already in use
+2019-04-07T23:19:41+0300 [stderr#error] During handling of the above exception, another exception occurred:
+2019-04-07T23:19:41+0300 [stderr#error] Traceback (most recent call last):
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/bin/twistd", line 11, in <module>
+2019-04-07T23:19:41+0300 [stderr#error]     load_entry_point('Twisted==18.9.0', 'console_scripts', 'twistd')()
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/scripts/twistd.py", line 31, in run
+2019-04-07T23:19:41+0300 [stderr#error]     app.run(runApp, ServerOptions)
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/application/app.py", line 674, in run
+2019-04-07T23:19:41+0300 [stderr#error]     runApp(config)
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/scripts/twistd.py", line 25, in runApp
+2019-04-07T23:19:41+0300 [stderr#error]     runner.run()
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/application/app.py", line 385, in run
+2019-04-07T23:19:41+0300 [stderr#error]     self.postApplication()
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/scripts/_twistd_unix.py", line 254, in postApplication
+2019-04-07T23:19:41+0300 [stderr#error]     self.startApplication(self.application)
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/scripts/_twistd_unix.py", line 442, in startApplication
+2019-04-07T23:19:41+0300 [stderr#error]     service.IService(application).privilegedStartService()
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/application/service.py", line 283, in privilegedStartService
+2019-04-07T23:19:41+0300 [stderr#error]     service.privilegedStartService()
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/application/internet.py", line 114, in privilegedStartService
+2019-04-07T23:19:41+0300 [stderr#error]     self._port = self._getPort()
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/application/internet.py", line 142, in _getPort
+2019-04-07T23:19:41+0300 [stderr#error]     'listen%s' % (self.method,))(*self.args, **self.kwargs)
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/internet/posixbase.py", line 495, in listenTCP
+2019-04-07T23:19:41+0300 [stderr#error]     p.startListening()
+2019-04-07T23:19:41+0300 [stderr#error]   File "/home/borisov/twisted_note/venv/lib/python3.6/site-packages/twisted/internet/tcp.py", line 1363, in startListening
+2019-04-07T23:19:41+0300 [stderr#error]     raise CannotListenError(self.interface, self.port, le)
+2019-04-07T23:19:41+0300 [stderr#error] twisted.internet.error.CannotListenError: Couldn't listen on any:8000: [Errno 98] Address already in use.
+2019-04-07T23:19:52+0300 [-] Loading server.py...
+2019-04-07T23:19:52+0300 [-] Loaded.
+2019-04-07T23:19:52+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/twisted_note/venv/bin/python 3.6.6) starting up.
+2019-04-07T23:19:52+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-04-07T23:19:52+0300 [-] EchoFactory starting on 8000
+2019-04-07T23:19:52+0300 [service.EchoFactory#info] Starting factory <service.EchoFactory object at 0x7f4344a45b38>
+2019-04-07T23:20:20+0300 [stdout#info] IPv4Address(type='TCP', host='127.0.0.1', port=60046)
+2019-04-07T23:20:21+0300 [stdout#info] b'da\r\n'
+2019-04-07T23:20:22+0300 [stdout#info] b'dad\r\n'
+2019-04-08T00:44:40+0300 [stdout#info] IPv4Address(type='TCP', host='127.0.0.1', port=60830)
+2019-04-08T00:47:54+0300 [stdout#info] IPv4Address(type='TCP', host='127.0.0.1', port=60848)
+2019-04-08T00:47:55+0300 [stdout#info] b'dad\r\n'
+2019-04-08T00:47:56+0300 [stdout#info] b'dad\r\n'
+2019-04-08T00:48:03+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:03+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:03+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:03+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:05+0300 [stdout#info] b'f\r\n'
+2019-04-08T00:48:05+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:05+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:06+0300 [stdout#info] b'd\r\n'
+2019-04-08T00:48:06+0300 [stdout#info] b'\x13'
+2019-04-08T00:48:07+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:07+0300 [stdout#info] b'as\r\n'
+2019-04-08T00:48:07+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:13+0300 [stdout#info] b'sdadadaadda\r\n'
+2019-04-08T00:48:14+0300 [stdout#info] b"'da\r\n"
+2019-04-08T00:48:14+0300 [stdout#info] b'da\r\n'
+2019-04-08T00:48:14+0300 [stdout#info] b'da\r\n'
+2019-04-08T00:48:14+0300 [stdout#info] b'daad\r\n'
+2019-04-08T00:48:14+0300 [stdout#info] b'da\r\n'
+2019-04-08T00:48:14+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:18+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:18+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:18+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:18+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:19+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:19+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:20+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:21+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:21+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:21+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\x18\r\n'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\r\n'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-04-08T00:48:21+0300 [stdout#info] b'\xff\xfb\x06'
+2019-04-08T00:55:54+0300 [stdout#info] IPv4Address(type='TCP', host='127.0.0.1', port=60856)
+2019-04-08T01:37:07+0300 [stdout#info] IPv4Address(type='TCP', host='127.0.0.1', port=33260)
+2019-04-08T01:37:07+0300 [stdout#info] b'GET / HTTP/1.1\r\nHost: localhost:8000\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nCookie: csrftoken=b0RnPCKi8PITOJlJH7SLKlmaeyx2HrHhos6ldmnRnEN9BPFrk5a4uawTeQSOxnq8; Pycharm-5aadcf6b=6ca800d1-a2f1-4483-96b3-6c874d3f50c8; sessionid=atzbro63gqpqq2pg3wehkhgbr5la4zrf\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2019-04-08T01:37:09+0300 [stdout#info] IPv4Address(type='TCP', host='127.0.0.1', port=33264)
+2019-04-08T01:37:09+0300 [stdout#info] b'GET /favicon.ico HTTP/1.1\r\nHost: localhost:8000\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0\r\nAccept: image/webp,*/*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nCookie: csrftoken=b0RnPCKi8PITOJlJH7SLKlmaeyx2HrHhos6ldmnRnEN9BPFrk5a4uawTeQSOxnq8; Pycharm-5aadcf6b=6ca800d1-a2f1-4483-96b3-6c874d3f50c8; sessionid=atzbro63gqpqq2pg3wehkhgbr5la4zrf\r\n\r\n'

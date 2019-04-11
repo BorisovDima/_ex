@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+
+
+
+<!--<div id="app">-->
+
+
+
+        <!--<div class="modal-mask" v-if="showModal">-->
+      <!--<div class="modal-wrapper">-->
+        <!--<div class="modal-container">-->
+
+          <!--<div class="modal-header">-->
+             <!--<form  @submit.prevent="SearchUsers">-->
+                    <!--<input type="text" v-model="username">-->
+                    <!--<input type="submit" value="Search" >-->
+             <!--</form>-->
+
+
+            <!--<div v-for="(user, index) in users" :key="index" :is="user['type']"-->
+                 <!--:id="user.users.id"-->
+                 <!--:name="user.users.name"-->
+                 <!--:last_seen="user.users.last_seen">-->
+            <!--</div>-->
+
+
+          <!--</div>-->
+
+          <!--<div class="modal-body">-->
+
+          <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--</div>-->
+          <!--<div class="modal-footer">-->
+              <!--<button class="modal-default-button" @click="close_modal">-->
+                 <!--OK-->
+              <!--</button>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+
+
+      <!--<div>-->
+          <!--<div v-if="!auth">-->
+              <!--<form  @submit.prevent="onLogin">-->
+                    <!--<input type="text" v-model=name placeholder="Name">-->
+                    <!--<input type="text" v-model=password placeholder="Password">-->
+                    <!--<input type="submit" value="Go">-->
+              <!--</form>-->
+              <!--<form  @submit.prevent="onRegister">-->
+                    <!--<input type="text" v-model=name placeholder="Name">-->
+                    <!--<input type="text" v-model=password placeholder="Password">-->
+                  <!--<input type="text" v-model=password2 placeholder="Password">-->
+                    <!--<input type="submit" value="Register">-->
+              <!--</form>-->
+
+          <!--</div>-->
+      <!--<div v-else>-->
+
+            <!--<div class="container">-->
+                <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+                    <!--<div class="container">-->
+                        <!--<button class="btn btn-danger" @click="open_modal">Users</button>-->
+                    <!--</div>-->
+                <!--</nav>-->
+                <!--<div class="row">-->
+
+                    <!--<div class="col-4 d-flex align-items-stretch" style="background-color: rgba(0,0,255,.1)">-->
+
+                        <!--<div v-for="(room, index) in rooms" :is=room['type'] :key="index" :id="room.room.id"-->
+                             <!--:room_name="room.room.name" :msg_text="room.room.msg_text" :msg_date="room.room.msg_date"-->
+                             <!--:count_msgs="room.room.count_msgs" :msgs="room.room.msgs">-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+                    <!--<div class="col-sm border">-->
+
+                        <!--<div v-for="(msg, index) in messages" :key="index" :is="msg['type']"-->
+                             <!--:id="msg.msg.id"-->
+                             <!--:name="msg.msg.name"-->
+                             <!--:date="msg.msg.date"-->
+                             <!--:msg_text="msg.msg.msg_text"-->
+                             <!--:author="msg.msg.author">-->
+                        <!--</div>-->
+
+                        <!--<div id="room-textarea" style="display: none">-->
+                           <!--<form  @submit.prevent="SendMessage">-->
+                                <!--<input type="text" v-model="text">-->
+                                <!--<input type="submit" value="Send" data-action="send-message">-->
+                           <!--</form>-->
+                            <!--<button @click='load_msgs'></button>-->
+                        <!--</div>-->
+
+
+            <!--</div>-->
+        <!--</div>-->
+   <!--</div>-->
+
+  <!--</div>-->
+
+
+
+<!--</div>-->
+<!--</div>-->
+
+    <div id="app">
+    </div>
+
+<script src="{% static 'dist/build.js' %}"></script>
+
+</body>
+</html>
