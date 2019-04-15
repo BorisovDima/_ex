@@ -1,34 +1,42 @@
-import asyncio
-# from asyncio import Queue
-#
-# async def left():
-#     for i in range(5):
-#         print('LEFT')
-#         await asyncio.sleep(1)
-#
-# async def worker(q):
-#     for i in range(5):
-#         await asyncio.sleep(1)
-#         await q.put(f'%{i}')
-#
-#
-# async def test(q):
-#     for i in range(5):
-#         print(await q.get())
-#
-# q = Queue()
-# asyncio.get_event_loop().run_until_complete(asyncio.gather(test(q), worker(q), left()))
+from functools import partial
 
-# import aioredis
-# import asyncio
-#
-#
-# async def main():
-#     conn = await aioredis.create_redis('redis://localhost')
-#     await conn.zadd('group', 60, '1')
-#     await conn.zadd('group', 60, '2')
-#     await conn.xadd()
-#     # print(await conn.brpop('test'))
-#
-# asyncio.get_event_loop().run_until_complete(main())
+class j:
+    @classmethod
+    def l(cls):
+        pass
 
+class a(j):
+    @classmethod
+    def l(cls):
+        print(cls)
+
+class b(a):
+    @classmethod
+    def l(cls):
+        print(super(b, cls).l())
+
+
+class clm:
+    def __init__(self, f):
+        self.f = f
+        print(f)
+
+    def __get__(self, instance, owner):
+        return partial(self.f, owner)
+
+class l:
+    def __init__(self, f):
+        self.f = f
+
+    def __call__(self, *args, **kwargs):
+        print('TUTA', args, kwargs)
+
+
+class t:
+    @clm
+    def test(cls):
+        print(cls)
+    @l
+    def dd(self):
+        pass
+t().dd()

@@ -1,11 +1,11 @@
-from twisted_.web import resource, server, static, xmlrpc
-from twisted_.application import service, strports
-from twisted_.internet import protocol, reactor, defer
-from twisted_.protocols import basic
+from twisted.web import resource, server, static, xmlrpc
+from twisted.application import service, strports
+from twisted.internet import protocol, reactor, defer
+from twisted.protocols import basic
 from zope.interface import implementer, Interface
-from twisted_.python import components
-from twisted_.spread import pb
-from twisted_.internet import endpoints
+from twisted.python import components
+from twisted.spread import pb
+from twisted.internet import endpoints
 
 import pwd
 

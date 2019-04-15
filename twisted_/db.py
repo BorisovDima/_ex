@@ -1,6 +1,7 @@
-from twisted_.internet import reactor
-from twisted_.enterprise import adbapi
-from twisted_.internet.task import deferLater
+from twisted.internet import reactor
+from twisted.enterprise import adbapi
+from twisted.internet.task import deferLater
+import os, sys
 
 db = adbapi.ConnectionPool("sqlite3", 'test.db', check_same_thread=False)
 
@@ -15,6 +16,7 @@ def test():
     return d
 
 def close(result):
+    print(result, 'result')
     db.close()
     reactor.stop()
 

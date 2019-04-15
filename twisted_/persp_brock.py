@@ -1,5 +1,5 @@
-from twisted_.spread import pb
-from twisted_.internet import reactor
+from twisted.spread import pb
+from twisted.internet import reactor
 
 class Echo(pb.Root):
 

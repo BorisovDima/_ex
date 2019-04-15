@@ -1,5 +1,5 @@
-from twisted_.web.client import getPage, downloadPage
-from twisted_.internet import defer, reactor
+from twisted.web.client import getPage, downloadPage
+from twisted.internet import defer, reactor
 
 
 

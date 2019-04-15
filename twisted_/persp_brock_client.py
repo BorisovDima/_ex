@@ -1,5 +1,5 @@
-from twisted_.spread import pb
-from twisted_.internet import reactor, defer
+from twisted.spread import pb
+from twisted.internet import reactor, defer
 
 # client = pb.PBClientFactory()
 # reactor.connectTCP('localhost', 8000, client)
