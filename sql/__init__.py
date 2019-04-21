@@ -1,15 +1,15 @@
-from sqlalchemy import create_engine
+# from sqlalchemy import create_engine
 
-e = create_engine('mysql+mysqlconnector://root:1488@localhost:3306/test')
-
-ex = e.execute
+# e = create_engine('mysql+mysqlconnector://root:1488@localhost:3306/test')
+#
+# ex = e.execute
 
 # print(ex('ALTER TABLE product ADD COLUMN Date2 datetime default CURRENT_TIMESTAMP'))
 # print(ex('CREATE INDEX product_index ON product(Name)'))
 
 # print(ex('ALTER TABLE product ADD CONSTRAINT pk_main PRIMARY KEY(id)'))
 
-print(ex('SELECT Name from product USE INDEX (pk_main)').fetchall())
+# print(ex('SELECT Name from product USE INDEX (pk_main)').fetchall()
 
 
 
@@ -64,4 +64,7 @@ print(ex('SELECT Name from product USE INDEX (pk_main)').fetchall())
 
 # print(ex('SELECT CONVERT(id, SIGNED) FROM product').fetchall())
 
-print(ex('SELECT 1 + "1"').fetchall())
+# print(ex('SELECT 1 + "1"').fetchall())
+
+
+

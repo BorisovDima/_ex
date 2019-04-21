@@ -1,0 +1,11 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/home/borisov/_ex
+ExecStart=/usr/local/bin/python3.6 /home/borisov/_ex/service.py
+
+[Install]
+WantedBy=multi-user.target

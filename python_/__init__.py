@@ -1,1 +1,3 @@
-print(b'' == '')
+import pack
+
+print(pack.ts)
