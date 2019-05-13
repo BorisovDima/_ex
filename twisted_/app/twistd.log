@@ -1,0 +1,31 @@
+2019-05-04T12:48:59+0300 [-] Loading application.tac...
+2019-05-04T12:48:59+0300 [-] Loaded.
+2019-05-04T12:48:59+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/_ex/venv/bin/python 3.6.6) starting up.
+2019-05-04T12:48:59+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-05-04T12:48:59+0300 [-] Factory starting on 8000
+2019-05-04T12:48:59+0300 [twisted.internet.protocol.Factory#info] Starting factory <twisted.internet.protocol.Factory object at 0x7fc3ffc9cf98>
+2019-05-04T12:49:59+0300 [-] Removing stale pidfile /home/borisov/_ex/twisted_/app/twistd.pid
+2019-05-04T12:49:59+0300 [-] Loading application.tac...
+2019-05-04T12:49:59+0300 [-] Loaded.
+2019-05-04T12:49:59+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/_ex/venv/bin/python 3.6.6) starting up.
+2019-05-04T12:49:59+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-05-04T12:49:59+0300 [-] Factory starting on 8000
+2019-05-04T12:49:59+0300 [twisted.internet.protocol.Factory#info] Starting factory <twisted.internet.protocol.Factory object at 0x7f9f4c5c0320>
+2019-05-04T12:50:22+0300 [stdout#info] b'Hi\r\n'
+2019-05-04T12:55:19+0300 [stdout#info] b'\xff\xf3\xff\xfd\x06'
+2019-05-04T12:55:20+0300 [stdout#info] b'\r\n'
+2019-05-04T12:55:21+0300 [stdout#info] b'\x11\r\n'
+2019-05-04T12:55:22+0300 [stdout#info] b'q\r\n'
+2019-05-04T12:55:24+0300 [stdout#info] b'q>\r\n'
+2019-05-04T12:55:25+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-05-04T12:55:25+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-05-04T12:55:25+0300 [stdout#info] b'\xff\xf4\xff\xfd\x06'
+2019-05-04T12:55:26+0300 [stdout#info] b'\xff\xed\xff\xfd\x06'
+2019-05-04T12:55:26+0300 [stdout#info] b'\r\n'
+2019-05-04T12:55:29+0300 [stdout#info] b'quit\r\n'
+2019-05-04T12:55:31+0300 [stdout#info] b'\xff\xf3\xff\xfd\x06'
+2019-05-04T12:55:32+0300 [stdout#info] b'\r\n'
+2019-05-04T12:55:35+0300 [stdout#info] b'\\Q\r\n'
+2019-05-04T12:55:38+0300 [stdout#info] b'\xff\xf3\xff\xfd\x06'
+2019-05-04T12:55:59+0300 [stdout#info] b'\x18\r\n'
+2019-05-04T12:56:07+0300 [stdout#info] b'\x18\r\n'

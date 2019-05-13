@@ -1,0 +1,103 @@
+2019-05-04T14:43:45+0300 [-] Loading twisted_loop.py...
+2019-05-04T14:43:45+0300 [-] Loaded.
+2019-05-04T14:43:45+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/_ex/venv/bin/python 3.6.6) starting up.
+2019-05-04T14:43:45+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-05-04T14:43:45+0300 [stderr#error] Traceback (most recent call last):
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/bin/twistd", line 11, in <module>
+2019-05-04T14:43:45+0300 [stderr#error]     load_entry_point('Twisted==18.9.0', 'console_scripts', 'twistd')()
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/scripts/twistd.py", line 31, in run
+2019-05-04T14:43:45+0300 [stderr#error]     app.run(runApp, ServerOptions)
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/app.py", line 674, in run
+2019-05-04T14:43:45+0300 [stderr#error]     runApp(config)
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/scripts/twistd.py", line 25, in runApp
+2019-05-04T14:43:45+0300 [stderr#error]     runner.run()
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/app.py", line 385, in run
+2019-05-04T14:43:45+0300 [stderr#error]     self.postApplication()
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/scripts/_twistd_unix.py", line 254, in postApplication
+2019-05-04T14:43:45+0300 [stderr#error]     self.startApplication(self.application)
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/scripts/_twistd_unix.py", line 453, in startApplication
+2019-05-04T14:43:45+0300 [stderr#error]     app.startApplication(application, not self.config['no_save'])
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/app.py", line 690, in startApplication
+2019-05-04T14:43:45+0300 [stderr#error]     service.IService(application).startService()
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/service.py", line 288, in startService
+2019-05-04T14:43:45+0300 [stderr#error]     service.startService()
+2019-05-04T14:43:45+0300 [stderr#error]   File "twisted_loop.py", line 13, in startService
+2019-05-04T14:43:45+0300 [stderr#error]     super().startService()
+2019-05-04T14:43:45+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/service.py", line 288, in startService
+2019-05-04T14:43:45+0300 [stderr#error]     service.startService()
+2019-05-04T14:43:45+0300 [stderr#error]   File "twisted_loop.py", line 66, in startService
+2019-05-04T14:43:45+0300 [stderr#error]     pika_factory = self.parent.factory
+2019-05-04T14:43:45+0300 [stderr#error] AttributeError: 'PikaService' object has no attribute 'factory'
+2019-05-04T14:44:52+0300 [-] Loading twisted_loop.py...
+2019-05-04T14:44:52+0300 [-] Loaded.
+2019-05-04T14:44:52+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/_ex/venv/bin/python 3.6.6) starting up.
+2019-05-04T14:44:52+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-05-04T14:44:52+0300 [stderr#error] Traceback (most recent call last):
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/bin/twistd", line 11, in <module>
+2019-05-04T14:44:52+0300 [stderr#error]     load_entry_point('Twisted==18.9.0', 'console_scripts', 'twistd')()
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/scripts/twistd.py", line 31, in run
+2019-05-04T14:44:52+0300 [stderr#error]     app.run(runApp, ServerOptions)
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/app.py", line 674, in run
+2019-05-04T14:44:52+0300 [stderr#error]     runApp(config)
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/scripts/twistd.py", line 25, in runApp
+2019-05-04T14:44:52+0300 [stderr#error]     runner.run()
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/app.py", line 385, in run
+2019-05-04T14:44:52+0300 [stderr#error]     self.postApplication()
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/scripts/_twistd_unix.py", line 254, in postApplication
+2019-05-04T14:44:52+0300 [stderr#error]     self.startApplication(self.application)
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/scripts/_twistd_unix.py", line 453, in startApplication
+2019-05-04T14:44:52+0300 [stderr#error]     app.startApplication(application, not self.config['no_save'])
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/app.py", line 690, in startApplication
+2019-05-04T14:44:52+0300 [stderr#error]     service.IService(application).startService()
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/service.py", line 288, in startService
+2019-05-04T14:44:52+0300 [stderr#error]     service.startService()
+2019-05-04T14:44:52+0300 [stderr#error]   File "twisted_loop.py", line 18, in startService
+2019-05-04T14:44:52+0300 [stderr#error]     super().startService()
+2019-05-04T14:44:52+0300 [stderr#error]   File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/application/service.py", line 288, in startService
+2019-05-04T14:44:52+0300 [stderr#error]     service.startService()
+2019-05-04T14:44:52+0300 [stderr#error]   File "twisted_loop.py", line 69, in startService
+2019-05-04T14:44:52+0300 [stderr#error]     pika_factory.put('Hello!')
+2019-05-04T14:44:52+0300 [stderr#error]   File "twisted_loop.py", line 60, in put
+2019-05-04T14:44:52+0300 [stderr#error]     d = self.client.sendMessage(data)
+2019-05-04T14:44:52+0300 [stderr#error] AttributeError: 'PikaFactory' object has no attribute 'client'
+2019-05-04T14:57:40+0300 [-] Loading twisted_loop.py...
+2019-05-04T14:57:41+0300 [-] Loaded.
+2019-05-04T14:57:41+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/_ex/venv/bin/python 3.6.6) starting up.
+2019-05-04T14:57:41+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-05-04T14:57:41+0300 [-] Factory starting on 8000
+2019-05-04T14:57:41+0300 [twisted.internet.protocol.Factory#info] Starting factory <twisted.internet.protocol.Factory object at 0x7f9fd4f802e8>
+2019-05-04T15:19:38+0300 [-] Removing stale pidfile /home/borisov/_ex/pika_/twistd.pid
+2019-05-04T15:19:38+0300 [-] Loading twisted_loop.py...
+2019-05-04T15:19:39+0300 [-] Loaded.
+2019-05-04T15:19:39+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/_ex/venv/bin/python 3.6.6) starting up.
+2019-05-04T15:19:39+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-05-04T15:19:39+0300 [-] TestFactory starting on 8000
+2019-05-04T15:19:39+0300 [builtins.TestFactory#info] Starting factory <TestFactory object at 0x7f48c1c38390>
+2019-05-04T15:20:18+0300 [TestProtocol,0,127.0.0.1] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/internet/posixbase.py", line 614, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/internet/tcp.py", line 243, in doRead
+	    return self._dataReceived(data)
+	  File "/home/borisov/_ex/venv/lib/python3.6/site-packages/twisted/internet/tcp.py", line 249, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "twisted_loop.py", line 70, in dataReceived
+	    rmq = self.factory.get_rmq()
+	builtins.AttributeError: 'TestProtocol' object has no attribute 'factory'
+	
+2019-05-04T15:21:45+0300 [-] Removing stale pidfile /home/borisov/_ex/pika_/twistd.pid
+2019-05-04T15:21:45+0300 [-] Loading twisted_loop.py...
+2019-05-04T15:21:45+0300 [-] Loaded.
+2019-05-04T15:21:45+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 18.9.0 (/home/borisov/_ex/venv/bin/python 3.6.6) starting up.
+2019-05-04T15:21:45+0300 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2019-05-04T15:21:45+0300 [-] TestFactory starting on 8000
+2019-05-04T15:21:45+0300 [builtins.TestFactory#info] Starting factory <TestFactory object at 0x7eff00ac8470>

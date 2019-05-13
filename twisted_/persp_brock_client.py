@@ -36,3 +36,7 @@ d = client.getRootObject()
 d.addCallback(lambda r: r.callRemote('get_user', b'borisov'))
 d.addCallback(lambda r: print(r))
 reactor.run()
+
+client = pb.PBClientFactory()
+d = client.getRootObject()
+d.addCallback(lambda r: r.callRemote(''))

@@ -105,7 +105,7 @@ Vue.component('created', {
         id = e.target.getAttribute('id')
          Vue.set(app.containers[index], 'load', true)
         app.remove(index, id)
-    },
+    },f
     start_container: function(e) {
                     index = e.target.getAttribute('data-action')
         id = e.target.getAttribute('id')
