@@ -1,0 +1,2 @@
+linux root 
+'echo {} | sudo -S /bin/su -c "{}{}"
